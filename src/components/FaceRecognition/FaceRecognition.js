@@ -8,7 +8,6 @@ const FaceRecognition = ({ imageURL, box }) => {
         // element in this array. see: https://reactjs.org/docs/lists-and-keys.html
         rows.push(<div className='bounding-box' style={{ top: box[i].topRow, right: box[i].rightCol, bottom: box[i].bottomRow, left: box[i].leftCol }}></div>);
     }
-    console.log("rows -> ",rows)
     return (
         <div className='center ma'>
             <div className='absolute mt2'>
